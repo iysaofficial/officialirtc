@@ -36,8 +36,8 @@ const About = () => {
               Jimbaran Bali, took the initiative to hold an
               International Research Teacher Competition (IRTC) 2023.
             </p> */}
-              <a href="" className="btn btn-primary">
-                Coming Soon 2024
+              <a href="https://registrasi-irtc-2024.vercel.app/" target="_blank" className="btn btn-primary">
+                Open Registration 2024
               </a>
             </div>
           </div>
