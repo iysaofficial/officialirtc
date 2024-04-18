@@ -157,7 +157,7 @@ const Navenws = () => {
               <ul className="sub-menu text-center">
                 <li className="menu-item">
                   <a
-                    href="https://drive.google.com/file/d/1-ESZ77LoMUYKHp4ua5-EBnL1LZWvJSPv/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1EU4RwG8kX-CMJFny37s3CtPTuPOwtbWK/view?usp=sharing"
                     rel="noreferrer noopener"
                     target="_blank"
                   >
