@@ -149,29 +149,9 @@ const Navigation = () => {
               </ul>
             </li>
             <li className="menu-item menu-item-has-children">
-              <a href="#" data-toggle="sub-menu">
+              <a href="https://drive.google.com/file/d/1EU4RwG8kX-CMJFny37s3CtPTuPOwtbWK/view?usp=sharing" target="_blank" data-toggle="sub-menu">
                 Guide Book
               </a>
-              <ul className="sub-menu text-center">
-                <li className="menu-item">
-                  <a
-                    href="https://drive.google.com/file/d/1-lbeasGr6WuwzTToF6hazSeXGx-b_IxY/view?usp=sharing"
-                    rel="noreferrer noopener"
-                    target="_blank"
-                  >
-                    Guide Book IRTC
-                  </a>
-                </li>
-                {/* <li className="menu-item">
-                  <a
-                    href="https://drive.google.com/file/d/1OdY-7w07-bB8NASQWyWSB2v9DTh5_YBw/view?usp=sharing"
-                    rel="noreferrer noopener"
-                    target="_blank"
-                  >
-                    Guide Book NRTC
-                  </a>
-                </li> */}
-              </ul>
             </li>
             {/* <li className="menu-item">
               <a href="/NewsletterPage">Guide Book</a>
