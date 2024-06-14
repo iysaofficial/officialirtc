@@ -6,7 +6,7 @@ const Contact = () => {
           <div class="box">
             <h1>Contact Us</h1>
             <div class="form-contact">
-              <form action="https://formspree.io/f/xdorzyyd" method="POST">
+              <form action="https://formspree.io/f/mwkggngg" method="POST">
                 <table>
                   <tr>
                     <td>
