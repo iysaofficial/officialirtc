@@ -141,15 +141,15 @@ const Navigation = () => {
               </a>
               <ul className="sub-menu text-center">
                 <li className="menu-item">
-                  <a href="https://drive.google.com/file/d/1d-kHyOz1eHjZvxVGDBpnJSMWFlwTKbte/view?usp=sharing">List of Winner 2023</a>
+                  <a href="https://drive.google.com/file/d/1d-kHyOz1eHjZvxVGDBpnJSMWFlwTKbte/view?usp=sharing" target="_blank">List of Winner 2023</a>
                 </li>
                 <li className="menu-item">
-                  <a href="https://drive.google.com/file/d/11u-wyqTiCAHS064A20X9HXWWdO_S3MFq/view?usp=share_link">List of Winner 2022</a>
+                  <a href="https://drive.google.com/file/d/11u-wyqTiCAHS064A20X9HXWWdO_S3MFq/view?usp=share_link" target="_blank">List of Winner 2022</a>
                 </li>
               </ul>
             </li>
             <li className="menu-item menu-item-has-children">
-              <a href="https://drive.google.com/file/d/1EU4RwG8kX-CMJFny37s3CtPTuPOwtbWK/view?usp=sharing" target="_blank" data-toggle="sub-menu">
+              <a href="https://drive.google.com/file/d/1EU4RwG8kX-CMJFny37s3CtPTuPOwtbWK/view?usp=sharing" target="_blank">
                 Guide Book
               </a>
             </li>
