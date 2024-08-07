@@ -128,7 +128,7 @@ const Navigation = () => {
             </li> */}
             <li className="menu-item">
               <a
-                href="https://drive.google.com/file/d/1-2luVIQYdK0oDAkzCs2227HE-VVe1P59/view?usp=share_link"
+                href="https://drive.google.com/file/d/1tCNqnQH-uL4rZ3Sw-uhiomupn5ZTtMjd/view?usp=sharing"
                 rel="noreferrer noopener"
                 target="_blank"
               >
