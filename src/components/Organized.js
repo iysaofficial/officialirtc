@@ -25,11 +25,11 @@ const Organized = () => {
                   className="ms-1 col-6 image-udayana"
                   alt="gallery"
                 />
-                <img
+                {/* <img
                   src="./assets/img/logo/Logo-UNISMA.png"
                   className="ms-1 col-6 image-udayana"
                   alt="gallery"
-                />
+                /> */}
               </div>
             </div>
           </div>
