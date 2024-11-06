@@ -126,11 +126,6 @@ const Navigation = () => {
                 List of Winner
               </a>
             </li> */}
-            <li className="menu-item">
-              <a href="" rel="noreferrer noopener" target="_blank">
-                Press Release
-              </a>
-            </li>
             <li className="menu-item menu-item-has-children">
               <a href="#" data-toggle="sub-menu">
                 Media Coverage
