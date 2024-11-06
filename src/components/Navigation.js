@@ -99,7 +99,7 @@ const Navigation = () => {
     <header className="header">
       <div className="header-main">
         <div className="logo">
-          <img src="../assets/img/logo/IRTC.jpg"/>
+          <img src="../assets/img/logo/IRTC.jpg" />
         </div>
         <div className="open-nav-menu">
           <span></span>
@@ -127,13 +127,32 @@ const Navigation = () => {
               </a>
             </li> */}
             <li className="menu-item">
-              <a
-                href="https://drive.google.com/file/d/1tCNqnQH-uL4rZ3Sw-uhiomupn5ZTtMjd/view?usp=sharing"
-                rel="noreferrer noopener"
-                target="_blank"
-              >
+              <a href="" rel="noreferrer noopener" target="_blank">
                 Press Release
               </a>
+            </li>
+            <li className="menu-item menu-item-has-children">
+              <a href="#" data-toggle="sub-menu">
+                Media Coverage
+              </a>
+              <ul className="sub-menu text-center">
+                <li className="menu-item">
+                  <a
+                    href="https://drive.google.com/file/d/1HRc2-l6jPmInPkTeKpFZBXbmgspcYwTe/view?usp=sharing"
+                    target="_blank"
+                  >
+                    Chief Judge Opening Speech 2024
+                  </a>
+                </li>
+                <li className="menu-item">
+                  <a
+                    href="https://drive.google.com/file/d/1tCNqnQH-uL4rZ3Sw-uhiomupn5ZTtMjd/view?usp=sharing"
+                    target="_blank"
+                  >
+                    Press Release 2023
+                  </a>
+                </li>
+              </ul>
             </li>
             <li className="menu-item menu-item-has-children">
               <a href="#" data-toggle="sub-menu">
@@ -141,21 +160,31 @@ const Navigation = () => {
               </a>
               <ul className="sub-menu text-center">
                 <li className="menu-item">
-                  <a href="https://drive.google.com/file/d/1d-kHyOz1eHjZvxVGDBpnJSMWFlwTKbte/view?usp=sharing" target="_blank">List of Winner 2023</a>
+                  <a
+                    href="https://drive.google.com/file/d/1d-kHyOz1eHjZvxVGDBpnJSMWFlwTKbte/view?usp=sharing"
+                    target="_blank"
+                  >
+                    List of Winner 2023
+                  </a>
                 </li>
                 <li className="menu-item">
-                  <a href="https://drive.google.com/file/d/11u-wyqTiCAHS064A20X9HXWWdO_S3MFq/view?usp=share_link" target="_blank">List of Winner 2022</a>
+                  <a
+                    href="https://drive.google.com/file/d/11u-wyqTiCAHS064A20X9HXWWdO_S3MFq/view?usp=share_link"
+                    target="_blank"
+                  >
+                    List of Winner 2022
+                  </a>
                 </li>
               </ul>
             </li>
             <li className="menu-item menu-item-has-children">
-              <a href="https://drive.google.com/file/d/1EU4RwG8kX-CMJFny37s3CtPTuPOwtbWK/view?usp=sharing" target="_blank">
+              <a
+                href="https://drive.google.com/file/d/1EU4RwG8kX-CMJFny37s3CtPTuPOwtbWK/view?usp=sharing"
+                target="_blank"
+              >
                 Guide Book
               </a>
             </li>
-            {/* <li className="menu-item">
-              <a href="/NewsletterPage">Guide Book</a>
-            </li> */}
             <li className="menu-item menu-item-has-children">
               <a href="#" data-toggle="sub-menu">
                 Gallery
@@ -163,11 +192,29 @@ const Navigation = () => {
               <ul className="sub-menu text-center">
                 <li className="menu-item">
                   <a
-                    href="https://drive.google.com/drive/folders/1A-0SR5F-KMgClTisz5dheVXCOnvZhcYZ?usp=sharing"
+                    href="https://drive.google.com/drive/folders/1p9ZRMi7TI6JzMjNCmeiBhlwIuxLqt7YC?usp=sharing"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    Gallery 2024
+                  </a>
+                </li>
+                <li className="menu-item">
+                  <a
+                    href="https://drive.google.com/drive/folders/11phBTa4qXqwNViMttlydJ_lT8M4pjP-G?usp=drive_link"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    Gallery 2023
+                  </a>
+                </li>
+                <li className="menu-item">
+                  <a
+                    href="https://drive.google.com/drive/folders/1LMIUW9PqVYZzAXtVY22g31MAplSuKRgP?usp=sharing"
                     rel="noreferrer noopener"
                     target="_blank"
                   >
-                    Gallery 2019
+                    Gallery 2022
                   </a>
                 </li>
                 <li className="menu-item">
@@ -181,11 +228,11 @@ const Navigation = () => {
                 </li>
                 <li className="menu-item">
                   <a
-                    href="https://drive.google.com/drive/folders/1LMIUW9PqVYZzAXtVY22g31MAplSuKRgP?usp=sharing"
+                    href="https://drive.google.com/drive/folders/1A-0SR5F-KMgClTisz5dheVXCOnvZhcYZ?usp=sharing"
                     rel="noreferrer noopener"
                     target="_blank"
                   >
-                    Gallery 2022
+                    Gallery 2019
                   </a>
                 </li>
               </ul>
