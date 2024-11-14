@@ -156,6 +156,14 @@ const Navigation = () => {
               <ul className="sub-menu text-center">
                 <li className="menu-item">
                   <a
+                    href="https://drive.google.com/drive/folders/10liMo_gMbouFgULtwlLfvxNInqIxPJH4?usp=drive_link"
+                    target="_blank"
+                  >
+                    List of Winner 2024
+                  </a>
+                </li>
+                <li className="menu-item">
+                  <a
                     href="https://drive.google.com/file/d/1d-kHyOz1eHjZvxVGDBpnJSMWFlwTKbte/view?usp=sharing"
                     target="_blank"
                   >
@@ -236,7 +244,7 @@ const Navigation = () => {
               <a href="/News1">News</a>
             </li>
             <li className="menu-item">
-              <a href="#faqs">FAQ</a>
+              <a href="/faq">FAQ</a>
             </li>
             <li className="menu-item">
               <a href="#conts">Contact Us</a>

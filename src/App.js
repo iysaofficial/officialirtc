@@ -1,8 +1,6 @@
 import './App.css';
 
-import Landingpages from './pages/Landingpages';
 import Irtcpage from './pages/Irtcpage';
-import Nrtcpage from './pages/Nrtcpage';
 
 // News
 import News1 from './pages/News1';

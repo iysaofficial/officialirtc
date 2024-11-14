@@ -37,7 +37,7 @@ const About = () => {
               International Research Teacher Competition (IRTC) 2023.
             </p> */}
               <a href="/" className="btn btn-primary">
-                Close Registration 2024
+                Coming Soon 2025
               </a>
             </div>
           </div>
