@@ -6,6 +6,7 @@ import Organized from "../components/Organized";
 import Faq from "../components/Faq";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import Video from "../components/Video";
 
 // Import CSS
 import "../css/Irtc.css";
@@ -18,6 +19,7 @@ function Irtcpage() {
         < About />
         < Category />
         < Objective />
+        < Video />
         < Organized />
         < Faq />
         < Contact />
