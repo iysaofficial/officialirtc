@@ -141,6 +141,14 @@ const Navigation = () => {
                 </li>
                 <li className="menu-item">
                   <a
+                    href="https://drive.google.com/file/d/1kNhPgPbXJ6PcirFeKAEn6cFhWyHh2nsx/view?usp=sharing"
+                    target="_blank"
+                  >
+                    Press Release 2024
+                  </a>
+                </li>
+                <li className="menu-item">
+                  <a
                     href="https://drive.google.com/file/d/1tCNqnQH-uL4rZ3Sw-uhiomupn5ZTtMjd/view?usp=sharing"
                     target="_blank"
                   >
