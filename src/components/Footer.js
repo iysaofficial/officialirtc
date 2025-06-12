@@ -1,7 +1,9 @@
+import { useLocation } from "react-router-dom";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 const Footer = () => {
+  const location = useLocation();
+  const isHome = location.pathname === "/" || location.pathname === "/home";
+
   return (
     <footer>
       <div className="rowFooter">
@@ -22,7 +24,7 @@ const Footer = () => {
           <h3 className="fw-bold">Office</h3>
           <a
             href="https://goo.gl/maps/9x18coXGCmSscKec6"
-            rel='noreferrer noopener'
+            rel="noreferrer noopener"
             target="_blank"
             className="office rata-kirkan"
           >
@@ -33,7 +35,7 @@ const Footer = () => {
           <br></br>
           <a
             href="mailto:youngscientist.iysa@gmail.com"
-            rel='noreferrer noopener'
+            rel="noreferrer noopener"
             target="_blank"
             className="office "
           >
@@ -43,16 +45,16 @@ const Footer = () => {
           <br></br>
           <a
             href="https://wa.me/+6281770914129"
-            rel='noreferrer noopener'
+            rel="noreferrer noopener"
             target="_blank"
             className="office "
-            >
+          >
             +62 817 7091 4129
           </a>
-            <br></br>
+          <br></br>
           <a
             href="https://wa.me/+6288213248890"
-            rel='noreferrer noopener'
+            rel="noreferrer noopener"
             target="_blank"
             className="office "
           >
@@ -66,17 +68,16 @@ const Footer = () => {
               <a href="/">Home</a>
             </li>
             <li>
-              <a href="#faqs">FAQ</a>
+              <a href="/homeregist">Registration</a>
             </li>
-            {/* <li>
-              <a href="/NewsletterPage">Gallery</a>
-            </li> */}
             <li>
-              <a href="/GalleryPhoto">Contact Us</a>
+              <a href={isHome ? "#faqs" : "/#faqs"}>FAQ</a>
+            </li>
+            <li>
+              <a href={isHome ? "#conts" : "/#conts"}>Contact Us</a>
             </li>
           </ul>
         </div>
-        
       </div>
       <hr className="mx-auto" />
       <p className="copyright">

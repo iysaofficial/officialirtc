@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
@@ -95,6 +96,9 @@ const Navigation = () => {
     };
   }, [isOpen]);
 
+    const location = useLocation();
+    const isHome = location.pathname === "/" || location.pathname === "/home";
+
   return (
     <header className="header">
       <div className="header-main">
@@ -117,26 +121,16 @@ const Navigation = () => {
             <li className="menu-item mt-0">
               <a href="/">Home</a>
             </li>
-            {/* <li className="menu-item">
-              <a
-                href="https://drive.google.com/file/d/11u-wyqTiCAHS064A20X9HXWWdO_S3MFq/view?usp=share_link"
-                rel="noreferrer noopener"
-                target="_blank"
-              >
-                List of Winner
-              </a>
-            </li> */}
             <li className="menu-item menu-item-has-children">
               <a href="#" data-toggle="sub-menu">
-                Media Coverage
+                Media
               </a>
               <ul className="sub-menu text-center">
                 <li className="menu-item">
                   <a
-                    href="https://drive.google.com/file/d/1HRc2-l6jPmInPkTeKpFZBXbmgspcYwTe/view?usp=sharing"
-                    target="_blank"
+                    href="/listnews"
                   >
-                    Chief Judge Opening Speech 2024
+                    News from Media
                   </a>
                 </li>
                 <li className="menu-item">
@@ -190,7 +184,7 @@ const Navigation = () => {
             </li>
             <li className="menu-item menu-item-has-children">
               <a
-                href="https://drive.google.com/file/d/1EU4RwG8kX-CMJFny37s3CtPTuPOwtbWK/view?usp=sharing"
+                href="https://drive.google.com/file/d/12w7Kl_pqqzDelG_DMesT8S_xpxFK7X2C/view?usp=sharing"
                 target="_blank"
               >
                 Guide Book
@@ -249,13 +243,10 @@ const Navigation = () => {
               </ul>
             </li>
             <li className="menu-item">
-              <a href="/News1">News</a>
+              <a href={isHome ? "#faqs" : "/#faqs"}>FAQ</a>
             </li>
             <li className="menu-item">
-              <a href="/faq">FAQ</a>
-            </li>
-            <li className="menu-item">
-              <a href="#conts">Contact Us</a>
+              <a href={isHome ? "#conts" : "/#conts"}>Contact Us</a>
             </li>
           </ul>
         </nav>

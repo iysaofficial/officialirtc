@@ -3,17 +3,17 @@ import News from "../components/news/News";
 import Footer from "../components/Footer";
 
 
-import "../css/News1.css";
+import "../css/news.css";
 
-function News1() {
+function ListNewsPage() {
     return (
-        <div>
-        < Navigation />
-        < News />
-        < Footer />
-        </div>
+        <>
+        <Navigation />
+        <News />
+        <Footer />
+        </>
 
     );
 }
 
-export default News1;
+export default ListNewsPage;

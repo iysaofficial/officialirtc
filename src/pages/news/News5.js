@@ -3,7 +3,7 @@ import Newscomp3 from "../../components/news/Newscomp3";
 import Footer from "../../components/Footer";
 
 
-import "../../css/News1.css";
+import "../../css/news.css";
 
 function News5() {
     return (
