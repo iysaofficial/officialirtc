@@ -402,12 +402,12 @@ export default function InternationalOffline() {
 
               {/* DATA SEKOLAH START */}
               {/* DATA SEKOLAH START */}
-              <h1 className="text-sm md:text-lg lg:text-5xl">SCHOOL DATA</h1>
+              <h1 className="text-sm md:text-lg lg:text-5xl">INSTITUION DATA</h1>
               <h1 className="garis-bawah"></h1>
               <div className="user-details">
                 <div className="input-box">
                   <label for="NAMA_SEKOLAH" className="form-label">
-                    Name of School/University
+                    Name of Institution
                   </label>
                   <label>
                     <p>
@@ -429,7 +429,7 @@ export default function InternationalOffline() {
                     id="NAMA_SEKOLAH"
                     name="NAMA_SEKOLAH"
                     className="form-control"
-                    placeholder="Input School Name of Leader & Member Team"
+                    placeholder="Input Institution Name of Leader & Member Team"
                     required
                     value={selectedNamaSekolah}
                     onChange={handleInputNameSchoolChange}
@@ -440,7 +440,7 @@ export default function InternationalOffline() {
                 </div>
               </div>
               <div className="user-details">
-                <div className="input-box">
+                {/* <div className="input-box">
                   <label for="GRADE" className="form-label">
                     Grade{" "}
                   </label>
@@ -457,7 +457,7 @@ export default function InternationalOffline() {
                     <option value="Secondary">Secondary</option>
                     <option value="University">University</option>
                   </select>
-                </div>
+                </div> */}
                 <div className="input-box">
                   <label for="COUNTRY" className="form-label">
                     Country
@@ -482,14 +482,14 @@ export default function InternationalOffline() {
               <div className="user-details">
                 <div className="input-box">
                   <label for="NAME_SUPERVISOR" className="form-label">
-                    Name of Teacher/Supervisor
+                    Name of Supervisor
                   </label>
                   <textarea
                     type="text"
                     id="NAME_SUPERVISOR"
                     name="NAME_SUPERVISOR"
                     className="form-control"
-                    placeholder="Input Name of Teacher/Supervisor"
+                      placeholder="Input Name of Supervisor"
                     required
                   ></textarea>
                 </div>
@@ -498,7 +498,7 @@ export default function InternationalOffline() {
                     for="WHATSAPP_NUMBER_SUPERVISOR"
                     className="form-label"
                   >
-                    Teacher/Supervisor WhatsApp Number
+                    Supervisor WhatsApp Number
                     <p>
                       Please write with phone code, example : (phone code) (your
                       number) +62 8177091xxxx
@@ -509,20 +509,20 @@ export default function InternationalOffline() {
                     id="WHATSAPP_NUMBER_SUPERVISOR"
                     name="WHATSAPP_NUMBER_SUPERVISOR"
                     className="form-control"
-                    placeholder="Input Teacher/Supervisor WhatsApp Number"
+                    placeholder="Input Supervisor WhatsApp Number"
                     required
                   />
                 </div>
                 <div className="input-box">
                   <label for="EMAIL_TEACHER_SUPERVISOR" className="form-label">
-                    Teacher/Supervisor Email Address
+                    Supervisor Email Address
                   </label>
                   <input
                     type="email"
                     id="EMAIL_TEACHER_SUPERVISOR"
                     name="EMAIL_TEACHER_SUPERVISOR"
                     className="form-control"
-                    placeholder="Input Teacher/Supervisor Email Address"
+                    placeholder="Input Supervisor Email Address"
                     required
                   />
                 </div>

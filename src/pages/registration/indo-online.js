@@ -304,7 +304,7 @@ function IndonesiaOnline() {
                     required
                   />
                 </div>
-                <div className="input-box">
+                {/* <div className="input-box">
                   <label for="NISN_NIM" className="form-label">
                     NISN / NIM Team Leader & Team Member
                   </label>
@@ -325,17 +325,17 @@ function IndonesiaOnline() {
                     placeholder="Input NISN / NIM Team Leader & Team Member"
                     required
                   ></textarea>
-                </div>
+                </div> */}
               </div>
 
               {/* DATA SEKOLAH START */}
               {/* DATA SEKOLAH START */}
-              <h1 className="text-sm md:text-lg lg:text-5xl">SCHOOL DATA</h1>
+              <h1 className="text-sm md:text-lg lg:text-5xl">INSTITUION DATA</h1>
               <h1 className="garis-bawah"></h1>
               <div className="user-details">
                 <div className="input-box">
                   <label htmlFor="NAMA_SEKOLAH" className="form-label">
-                    Name of School/University
+                    Name of Institution
                   </label>
                   <label>
                     <p>
@@ -366,7 +366,7 @@ function IndonesiaOnline() {
                     {selectedNamaSekolah.length} / {maxSchoolChars} character
                   </p>
                 </div>
-                <div className="input-box">
+                {/* <div className="input-box">
                   <label for="NPSN" className="form-label">
                     Nomor Pokok Sekolah Nasional (NPSN)
                   </label>
@@ -405,7 +405,7 @@ function IndonesiaOnline() {
                     <option value="Secondary">Secondary</option>
                     <option value="University">University</option>
                   </select>
-                </div>
+                </div> */}
                 <div className="input-box">
                   <label for="PROVINCE" className="form-label">
                     Province
@@ -432,14 +432,14 @@ function IndonesiaOnline() {
               <div className="user-details">
                 <div className="input-box">
                   <label for="NAME_SUPERVISOR" className="form-label">
-                    Name of Teacher/Supervisor
+                    Name of Supervisor
                   </label>
                   <textarea
                     type="text"
                     id="NAME_SUPERVISOR"
                     name="NAME_SUPERVISOR"
                     className="form-control"
-                    placeholder="Input Name of Teacher/Supervisor"
+                    placeholder="Input Name of Supervisor"
                     required
                   ></textarea>
                 </div>
@@ -448,7 +448,7 @@ function IndonesiaOnline() {
                     for="WHATSAPP_NUMBER_SUPERVISOR"
                     className="form-label"
                   >
-                    Teacher/Supervisor WhatsApp Number
+                    Supervisor WhatsApp Number
                     <p>
                       Please write with phone code, example : (phone code) (your
                       number) +62 8177091xxxx
@@ -459,21 +459,21 @@ function IndonesiaOnline() {
                     id="WHATSAPP_NUMBER_SUPERVISOR"
                     name="WHATSAPP_NUMBER_SUPERVISOR"
                     className="form-control"
-                    placeholder="Input Teacher/Supervisor WhatsApp Number"
+                    placeholder="Input Supervisor WhatsApp Number"
                     required
                   />
                 </div>
 
                 <div className="input-box">
                   <label for="EMAIL_TEACHER_SUPERVISOR" className="form-label">
-                    Teacher/Supervisor Email Address
+                    Supervisor Email Address
                   </label>
                   <input
                     type="email"
                     id="EMAIL_TEACHER_SUPERVISOR"
                     name="EMAIL_TEACHER_SUPERVISOR"
                     className="form-control"
-                    placeholder="Input Teacher/Supervisor Email Address"
+                    placeholder="Input Supervisor Email Address"
                     required
                   />
                 </div>
