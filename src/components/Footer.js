@@ -42,16 +42,7 @@ const Footer = () => {
             youngscientist.iysa@gmail.com
           </a>
           <br></br>
-          <br></br>
-          <a
-            href="https://wa.me/+6281770914129"
-            rel="noreferrer noopener"
-            target="_blank"
-            className="office "
-          >
-            +62 817 7091 4129
-          </a>
-          <br></br>
+          <br></br> 
           <a
             href="https://wa.me/+6288213248890"
             rel="noreferrer noopener"

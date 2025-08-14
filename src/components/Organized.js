@@ -20,6 +20,11 @@ const Organized = () => {
                   className="ms-1 col-6 image-udayana"
                   alt="gallery"
                 />
+                <img
+                  src="./assets/img/logo/IZMIR IISEEF.png"
+                  className="ms-1 col-6 image-udayana"
+                  alt="gallery"
+                />
               </div>
             </div>
           </div>
