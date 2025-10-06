@@ -71,8 +71,10 @@ export default function InternationalOnline() {
     }
   }, [router]);
 
+  // const scriptURL =
+  //   "https://script.google.com/macros/s/AKfycbzMiLJHJanG0c8Y3vL2vdAiT3MXZ5lT95NaVDssLjEHn8B6ARltqPdRRTJOU7gHKfkI/exec";
   const scriptURL =
-    "https://script.google.com/macros/s/AKfycbzMiLJHJanG0c8Y3vL2vdAiT3MXZ5lT95NaVDssLjEHn8B6ARltqPdRRTJOU7gHKfkI/exec";
+    "";
 
   useEffect(() => {
     const form = document.forms["regist-form"];
@@ -705,7 +707,7 @@ export default function InternationalOnline() {
                 </div>
               </div>
               <div className="button">
-                <input type="submit" value="SUBMIT FORM" />
+                <input type="submit" value="CLOSE REGISTRATION" />
               </div>
             </form>
 

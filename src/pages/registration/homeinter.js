@@ -52,21 +52,33 @@ function HomeInter() {
             </div>
           </div>
           <div className="link-web mx-auto text-center">
-            <a
+            {/* <a
               className="btn-regist btn-action text-center me-lg-5 m-2"
               onClick={() =>
                 handleOpenModal("/inter-online", internationalOnlineTerms)
               }
             >
               Online Competition <i className="fa-solid fa-earth-americas"></i>
-            </a>
+            </a> */}
             <a
+              className="btn-regist btn-action text-center me-lg-5 m-2"
+              onClick={() => handleOpenModal("/")}
+            >
+              Close Registration <i className="fa-solid fa-earth-americas"></i>
+            </a>
+            {/* <a
               className="btn-regist btn-action text-center me-lg-5 m-2"
               onClick={() =>
                 handleOpenModal("/inter-offline", internationalOfflineTerms)
               }
             >
               Offline Competition <i className="fa-solid fa-earth-americas"></i>
+            </a> */}
+            <a
+              className="btn-regist btn-action text-center me-lg-5 m-2"
+              onClick={() => handleOpenModal("/")}
+            >
+              Close Registration <i className="fa-solid fa-earth-americas"></i>
             </a>
           </div>
         </div>
