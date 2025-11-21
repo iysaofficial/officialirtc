@@ -23,7 +23,7 @@ const HeroSection = () => {
               View Guide Book
             </a>
             <a href="/" className="main-hero-btn main-hero-btn-yellow">
-              Close Registration
+              Coming Soon Next Year
             </a>
           </div>
         </div>

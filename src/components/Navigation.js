@@ -96,8 +96,8 @@ const Navigation = () => {
     };
   }, [isOpen]);
 
-    const location = useLocation();
-    const isHome = location.pathname === "/" || location.pathname === "/home";
+  const location = useLocation();
+  const isHome = location.pathname === "/" || location.pathname === "/home";
 
   return (
     <header className="header">
@@ -127,16 +127,22 @@ const Navigation = () => {
               </a>
               <ul className="sub-menu text-center">
                 <li className="menu-item">
+                  <a href="/listnews">News from Media</a>
+                </li>
+                <li className="menu-item">
                   <a
-                    href="/listnews"
+                    href="https://drive.google.com/file/d/12D5KTwhSXcKZO8osMVpFk47Etgk0kGzY/view?usp=sharingcd"
+                    target="_blank"
+                    rel="noreferrer noopener"
                   >
-                    News from Media
+                    Press Release 2025
                   </a>
                 </li>
                 <li className="menu-item">
                   <a
                     href="https://drive.google.com/file/d/1kNhPgPbXJ6PcirFeKAEn6cFhWyHh2nsx/view?usp=sharing"
                     target="_blank"
+                    rel="noreferrer noopener"
                   >
                     Press Release 2024
                   </a>
@@ -145,42 +151,15 @@ const Navigation = () => {
                   <a
                     href="https://drive.google.com/file/d/1tCNqnQH-uL4rZ3Sw-uhiomupn5ZTtMjd/view?usp=sharing"
                     target="_blank"
+                    rel="noreferrer noopener"
                   >
                     Press Release 2023
                   </a>
                 </li>
               </ul>
             </li>
-            <li className="menu-item menu-item-has-children">
-              <a href="#" data-toggle="sub-menu">
-                List of Winner
-              </a>
-              <ul className="sub-menu text-center">
-                <li className="menu-item">
-                  <a
-                    href="https://drive.google.com/drive/folders/10liMo_gMbouFgULtwlLfvxNInqIxPJH4?usp=drive_link"
-                    target="_blank"
-                  >
-                    List of Winner 2024
-                  </a>
-                </li>
-                <li className="menu-item">
-                  <a
-                    href="https://drive.google.com/file/d/1d-kHyOz1eHjZvxVGDBpnJSMWFlwTKbte/view?usp=sharing"
-                    target="_blank"
-                  >
-                    List of Winner 2023
-                  </a>
-                </li>
-                <li className="menu-item">
-                  <a
-                    href="https://drive.google.com/file/d/11u-wyqTiCAHS064A20X9HXWWdO_S3MFq/view?usp=share_link"
-                    target="_blank"
-                  >
-                    List of Winner 2022
-                  </a>
-                </li>
-              </ul>
+            <li className="menu-item">
+              <a href={isHome ? "low" : "/low"}>List of Winner</a>
             </li>
             <li className="menu-item menu-item-has-children">
               <a
@@ -195,6 +174,15 @@ const Navigation = () => {
                 Gallery
               </a>
               <ul className="sub-menu text-center">
+                <li className="menu-item">
+                  <a
+                    href="https://drive.google.com/drive/folders/1p-oWDrc1b9JgqGjVkgZ3tWzin0SCTDed?usp=sharing"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    Gallery 2025
+                  </a>
+                </li>
                 <li className="menu-item">
                   <a
                     href="https://drive.google.com/drive/folders/1p9ZRMi7TI6JzMjNCmeiBhlwIuxLqt7YC?usp=sharing"

@@ -1,6 +1,8 @@
 import "./App.css";
 
 import Irtcpage from "./pages/Irtcpage";
+import ListOfWinner from "./pages/low/listlow";
+import ListOfWinner2025 from "./pages/low/low2025";
 
 // News
 import ListNewsPage from "./pages/listnewspage";
@@ -28,6 +30,8 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Irtcpage />} />
+          <Route path="/low" element={<ListOfWinner />} />
+          <Route path="/low2025" element={<ListOfWinner2025 />} />
           <Route path="/listnews" element={<ListNewsPage />} />
           <Route path="/News3" element={<News3 />} />
           <Route path="/News4" element={<News4 />} />
