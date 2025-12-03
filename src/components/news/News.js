@@ -7,6 +7,28 @@ const News = () => {
           <div class="news1 col-sm-4">
             <div class="card">
               <img
+                src="../assets/img/logo/20251.jpg"
+                class="card-img col-sm-3 mt-2"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title mt-3 fw-bold">
+                  NSIF, ISIF, NRTC, and IRTC 2025 Successfully Held, Featuring 774 Teams from 24 Countries
+                </h5>
+                <p class="card-text">
+                  Jabaran.id - Four prestigious scientific competitions organized by the Indonesian Young Scientist Association (IYSA) in collaboration with the Vocational School of Diponegoro University and the İzmir International Innovation Science Energy Engineering Fair (İzmiriiseef) were once again successfully held in 2025. The events, which consist of the National Science and Invention Fair (NSIF), International Science and Invention Fair (ISIF), National Research Teacher Competition (NRTC), and International Research Teacher Competition (IRTC), attracted 774 research teams from within and outside the country.
+                </p>
+                <a href="https://jabaran.id/nsif-isif-nrtc-dan-irtc-2025-sukses-digelar-hadirkan-774-tim-dari-24-negara/" class="btnnews btn btn-primary">
+                  View
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row news">
+          <div class="news1 col-sm-4">
+            <div class="card">
+              <img
                 src="../assets/img/logo/news1.WebP"
                 class="card-img col-sm-4 mt-2"
                 alt="..."
