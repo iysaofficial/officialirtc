@@ -15,7 +15,7 @@ const RegistHome = () => {
                 REGISTRATION FORM
               </h1>
               <h3 className="mx-auto mt-5 mb-2 text-sm md:text-lg lg:text-2xl">
-                Choose Categories Participant for Registration IRTC 2025
+                Choose Categories Participant for Registration IRTC 2026
               </h3>
             </div>
           </div>
@@ -28,19 +28,19 @@ const RegistHome = () => {
               <i className="fa-solid fa-earth-americas"></i>
             </a> */}
             <a
-              href="/"
+              href="/homeindo"
               className="btn-regist btn-action text-center me-lg-5 m-2"
             >
-              Close Registration{" "}
+              Indonesia Participant{" "}
               <i className="fa-solid fa-earth-americas"></i>
             </a>
-            {/* <a
+            <a
               href="/homeinter"
               className="btn-regist btn-action text-center me-lg-5 m-2"
             >
               International Participant{" "}
               <i className="fa-solid fa-earth-americas"></i>
-            </a> */}
+            </a>
           </div>
         </div>
       </section>

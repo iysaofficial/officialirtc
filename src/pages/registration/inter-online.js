@@ -20,6 +20,8 @@ export default function InternationalOnline() {
   const [countdown, setCountdown] = useState(5);
   const [canClick, setCanClick] = useState(false);
   const router = useNavigate();
+  const [phoneCodes, setPhoneCodes] = useState([]);
+  const [phoneCodesLoading, setPhoneCodesLoading] = useState(true); 
 
   const handleInputNameChange = (e) => {
     const { value } = e.target;
@@ -45,6 +47,7 @@ export default function InternationalOnline() {
   const handleCategoryChange = (e) => {
     const value = e.target.value;
     setSelectedCategory(value);
+
     // Logika untuk menentukan harga berdasarkan kategori yang dipilih
     switch (value) {
       case "International Research Teacher Competition - Online Competition":
@@ -62,7 +65,7 @@ export default function InternationalOnline() {
     }
   };
 
-  useEffect(() => {
+  useEffect(() => { 
     const termsAccepted = sessionStorage.getItem("termsAccepted");
 
     if (!termsAccepted) {
@@ -71,10 +74,36 @@ export default function InternationalOnline() {
     }
   }, [router]);
 
-  // const scriptURL =
-  //   "https://script.google.com/macros/s/AKfycbzMiLJHJanG0c8Y3vL2vdAiT3MXZ5lT95NaVDssLjEHn8B6ARltqPdRRTJOU7gHKfkI/exec";
-  const scriptURL =
-    "";
+  const scriptURL = "https://script.google.com/macros/s/AKfycbyiIOHC2PB3Ig7KO8JtM3qLEDlOfhyXfgDmWV1sKu7OrMm74DdTbqdkaOPPygoxNXKyHQ/exec";
+
+  useEffect(() => {
+    fetch("https://restcountries.com/v3.1/all?fields=name,idd")
+      .then((response) => response.json())
+      .then((data) => {
+        if (Array.isArray(data)) {
+          const codes = data
+            .filter(
+              (country) =>
+                country.idd && country.idd.root && country.idd.suffixes
+            )
+            .map((country) => ({
+              name: country.name.common,
+              code:
+                country.idd.root +
+                (country.idd.suffixes ? country.idd.suffixes[0] : ""),
+            }))
+            .sort((a, b) => a.name.localeCompare(b.name));
+          setPhoneCodes(codes);
+        } else {
+          console.error("API response is not an array:", data);
+        }
+        setPhoneCodesLoading(false);
+      })
+      .catch((error) => {
+        console.error("Error fetching phone codes:", error);
+        setPhoneCodesLoading(false);
+      });
+  }, []);
 
   useEffect(() => {
     const form = document.forms["regist-form"];
@@ -162,7 +191,7 @@ export default function InternationalOnline() {
             <br />
             <br />
             <h4>
-              HELLO IRTC 2025 PARTICIPANTS, Please consider the following
+              HELLO IRTC 2026 PARTICIPANTS, Please consider the following
               information before filling out the registration form :
             </h4>
             <br />
@@ -226,25 +255,29 @@ export default function InternationalOnline() {
                   <label for="CATEGORY_PARTICIPANT" className="form-label">
                     Categories Participant
                   </label>
-                  <input
+                  <select
                     type="text"
                     id="CATEGORY_PARTICIPANT"
                     name="CATEGORY_PARTICIPANT"
-                    className="form-control"
+                    class="form-control"
                     placeholder="Choose Categories Participant"
-                    value="International Participant"
-                    readOnly
-                  ></input>
+                    value=""
+                    required
+                  >
+                    <option value="International Participant">
+                      International Participant
+                    </option>
+                  </select>
                 </div>
-                <div className="input-box">
-                  <label for="CATEGORY_COMPETITION" className="form-label">
+                <div class="input-box">
+                  <label for="CATEGORY_COMPETITION" class="form-label">
                     Category Competition
                   </label>
                   <select
                     type="text"
                     id="CATEGORY_COMPETITION"
                     name="CATEGORY_COMPETITION"
-                    className="form-control"
+                    class="form-control"
                     placeholder="Choose Category Competition "
                     required
                     onChange={handleCategoryChange}
@@ -277,15 +310,15 @@ export default function InternationalOnline() {
                       the following format:
                     </p>
                     <p>Note: maximum 5 members + 1 team leader</p>
-                    <h6>Kamal Putra</h6>
-                    <h6>Ranu Ramadhan</h6>
+                    <h6>Kamal Putra Simatupang</h6>
+                    <h6>Nur Alif Rajaloa Hidayat</h6>
                     <h6>Irsyad Zaidan</h6>
                   </label>
                   <textarea
                     type="text"
                     id="NAMA_LENGKAP"
                     name="NAMA_LENGKAP"
-                    className="form-control"
+                    class="form-control"
                     placeholder="Input Name of Leader & Member Team"
                     required
                     value={selectedMaxNamaLengkap}
@@ -295,8 +328,8 @@ export default function InternationalOnline() {
                     {selectedMaxNamaLengkap.length} / {maxNameChars} character
                   </p>
                 </div>
-                <div className="input-box">
-                  <label for="LEADER_WHATSAPP" className="form-label">
+                <div class="input-box">
+                  <label for="LEADER_WHATSAPP" class="form-label">
                     Leader WhatsApp Number
                     <p>
                       Please write with phone code, example : (phone code) (your
@@ -328,7 +361,7 @@ export default function InternationalOnline() {
                     <option value="Afganistan +93">Afganistan +93</option>
                     <option value="Afrika Selatan +27">
                       Afrika Selatan +27
-                    </option>
+                        </option>
                     <option value="Afrika Tengah +236">
                       Afrika Tengah +236
                     </option>
@@ -388,8 +421,8 @@ export default function InternationalOnline() {
                     <option value="Zimbabwe +263">Zimbabwe +263</option>
                   </select>
                 </div>
-                <div className="input-box">
-                  <label for="LEADER_EMAIL" className="form-label">
+                <div class="input-box">
+                  <label for="LEADER_EMAIL" class="form-label">
                     Leader Email Address
                   </label>
                   <label>
@@ -403,7 +436,7 @@ export default function InternationalOnline() {
                     type="email"
                     id="LEADER_EMAIL"
                     name="LEADER_EMAIL"
-                    className="form-control"
+                    class="form-control"
                     placeholder="Input Your Leader Email Address"
                     required
                   />
@@ -412,12 +445,12 @@ export default function InternationalOnline() {
 
               {/* DATA SEKOLAH START */}
               {/* DATA SEKOLAH START */}
-              <h1 className="text-sm md:text-lg lg:text-5xl">INSTITUION DATA</h1>
+              <h1 className="text-sm md:text-lg lg:text-5xl">SCHOOL DATA</h1>
               <h1 className="garis-bawah"></h1>
-              <div className="user-details">
-                <div className="input-box">
-                  <label for="NAMA_SEKOLAH" className="form-label">
-                    Name of Institution
+              <div class="user-details">
+                <div class="input-box">
+                  <label for="NAMA_SEKOLAH" class="form-label">
+                    Name of School/University
                   </label>
                   <label>
                     <p>
@@ -438,8 +471,8 @@ export default function InternationalOnline() {
                     type="text"
                     id="NAMA_SEKOLAH"
                     name="NAMA_SEKOLAH"
-                    className="form-control"
-                    placeholder="Input Institution Name of Leader & Member Team"
+                    class="form-control"
+                    placeholder="Input School Name of Leader & Member Team"
                     required
                     value={selectedNamaSekolah}
                     onChange={handleInputNameSchoolChange}
@@ -450,33 +483,35 @@ export default function InternationalOnline() {
                 </div>
               </div>
               <div className="user-details">
-                {/* <div className="input-box">
-                  <label for="GRADE" className="form-label">
-                    Grade{" "}
-                  </label>
-                  <select
-                    type="text"
-                    id="GRADE"
-                    name="GRADE"
-                    className="form-control"
-                    placeholder="Choose Grade"
-                    required
-                  >
-                    <option value="">--Choose Grade--</option>
-                    <option value="Elementary">Elementary</option>
-                    <option value="Secondary">Secondary</option>
-                    <option value="University">University</option>
-                  </select>
-                </div> */}
-                <div className="input-box">
-                  <label for="COUNTRY" className="form-label">
+              <div class="input-box">
+                <label for="GRADE" class="form-label">
+                  Grade{" "}
+                </label>
+                <select
+                  type="text"
+                  id="GRADE"
+                  name="GRADE"
+                  class="form-control"
+                  placeholder="Choose Grade"
+                  required
+                >
+                  <option value="">--Choose Your Grade--</option>
+                  <option value="Elementary">Elementary</option>
+                  <option value="Secondary">
+                    Secondary
+                  </option>
+                  <option value="University">University</option>
+                </select>
+              </div>
+                <div class="input-box">
+                  <label for="COUNTRY" class="form-label">
                     Country
                   </label>
                   <input
                     type="text"
                     id="COUNTRY"
                     name="COUNTRY"
-                    className="form-control"
+                    class="form-control"
                     placeholder="Your Country "
                     required
                   />
@@ -490,25 +525,22 @@ export default function InternationalOnline() {
               </h1>
               <h1 className="garis-bawah"></h1>
               <div className="user-details">
-                <div className="input-box">
-                  <label for="NAME_SUPERVISOR" className="form-label">
-                    Name of Supervisor
+                <div class="input-box">
+                  <label for="NAME_SUPERVISOR" class="form-label">
+                    Name of Teacher/Supervisor
                   </label>
                   <textarea
                     type="text"
                     id="NAME_SUPERVISOR"
                     name="NAME_SUPERVISOR"
-                    className="form-control"
-                    placeholder="Input Name of Supervisor"
+                    class="form-control"
+                    placeholder="Input Name of Teacher/Supervisor"
                     required
                   ></textarea>
                 </div>
-                <div className="input-box">
-                  <label
-                    for="WHATSAPP_NUMBER_SUPERVISOR"
-                    className="form-label"
-                  >
-                    Supervisor WhatsApp Number
+                <div class="input-box">
+                  <label for="WHATSAPP_NUMBER_SUPERVISOR" class="form-label">
+                    Teacher/Supervisor WhatsApp Number
                     <p>
                       Please write with phone code, example : (phone code) (your
                       number) +62 8177091xxxx
@@ -518,21 +550,21 @@ export default function InternationalOnline() {
                     type="number"
                     id="WHATSAPP_NUMBER_SUPERVISOR"
                     name="WHATSAPP_NUMBER_SUPERVISOR"
-                    className="form-control"
-                    placeholder="Input Supervisor WhatsApp Number"
+                    class="form-control"
+                    placeholder="Input Teacher/Supervisor WhatsApp Number"
                     required
                   />
                 </div>
-                <div className="input-box">
-                  <label for="EMAIL_TEACHER_SUPERVISOR" className="form-label">
-                    Supervisor Email Address
+                <div class="input-box">
+                  <label for="EMAIL_TEACHER_SUPERVISOR" class="form-label">
+                    Teacher/Supervisor Email Address
                   </label>
                   <input
                     type="email"
                     id="EMAIL_TEACHER_SUPERVISOR"
                     name="EMAIL_TEACHER_SUPERVISOR"
-                    className="form-control"
-                    placeholder="Input Supervisor Email Address"
+                    class="form-control"
+                    placeholder="Input Teacher/Supervisor Email Address"
                     required
                   />
                 </div>
@@ -549,8 +581,8 @@ export default function InternationalOnline() {
                 <h1 className="garis-bawah"></h1>
               </div>
               <div className="user-details">
-                <div className="input-box">
-                  <label for="PROJECT_TITLE" className="form-label">
+                <div class="input-box">
+                  <label for="PROJECT_TITLE" class="form-label">
                     Project Title
                     <p>
                       Notes: Please fill in the title data CORRECTLY, the data
@@ -561,7 +593,7 @@ export default function InternationalOnline() {
                     type="text"
                     id="PROJECT_TITLE"
                     name="PROJECT_TITLE"
-                    className="form-control"
+                    class="form-control"
                     placeholder="Input Your Project Title"
                     required
                     value={selectedMaxProject}
@@ -592,8 +624,8 @@ export default function InternationalOnline() {
                     <option value="Technology">Technology</option>
                   </select>
                 </div>
-                <div className="input-box ">
-                  <label for="YES_NO" className="form-label">
+                <div class="input-box ">
+                  <label for="YES_NO" class="form-label">
                     Does the project title have ever participated in an
                     invention and innovation competition before?
                   </label>
@@ -601,7 +633,7 @@ export default function InternationalOnline() {
                     type="text"
                     id="YES_NO"
                     name="YES_NO"
-                    className="form-control"
+                    class="form-control"
                     placeholder="--Choose-- "
                     required
                   >
@@ -610,11 +642,8 @@ export default function InternationalOnline() {
                     <option value="No">No</option>
                   </select>
                 </div>
-                <div className="input-box">
-                  <label
-                    for="JUDUL_PERNAH_BERPATISIPASI"
-                    className="form-label"
-                  >
+                <div class="input-box">
+                  <label for="JUDUL_PERNAH_BERPATISIPASI" class="form-label">
                     If the project title have ever participated in other
                     invention and innovation competition, please write down the
                     name of competition
@@ -623,10 +652,10 @@ export default function InternationalOnline() {
                     type="text"
                     id="JUDUL_PERNAH_BERPATISIPASI"
                     name="JUDUL_PERNAH_BERPATISIPASI"
-                    className="form-control"
+                    class="form-control"
                     placeholder="Input Competition Name"
                   ></textarea>
-                  <div className="mt-5" id="form_alerts"></div>
+                  <div class="mt-5" id="form_alerts"></div>
                 </div>
 
                 {/* Kolom Harga */}
@@ -655,15 +684,15 @@ export default function InternationalOnline() {
                 <h1 className="garis-bawah"></h1>
               </div>
               <div className="user-details">
-                <div className="input-box">
-                  <label for="SOSMED" className="form-label">
+                <div class="input-box">
+                  <label for="SOSMED" class="form-label">
                     If you don&apos;t have whatsapp number, please write down
                     your social media account. (Ex: Instagram/FB/Telegram/Line)
                   </label>
                   <label>
                     <p>
                       Copy your URL link(Ex:
-                      https://www.instagram.com/iicyms_official/) or write your
+                      https://www.instagram.com/irtc_official/) or write your
                       username (Ex: iysa_official)
                     </p>
                   </label>
@@ -671,7 +700,7 @@ export default function InternationalOnline() {
                     type="text"
                     id="SOSMED"
                     name="SOSMED"
-                    className="form-control"
+                    class="form-control"
                     placeholder="Input Your Social Media Account "
                     required
                   />
@@ -679,13 +708,13 @@ export default function InternationalOnline() {
 
                 <div className="input-box">
                   <label for="INFORMATION_RESOURCES" className="form-label">
-                    IRTC 2025 Competition Information Resources
+                    IRTC 2026 Competition Information Resources
                   </label>
                   <select
                     type="text"
                     id="INFORMATION_RESOURCES"
                     name="INFORMATION_RESOURCES"
-                    className="form-control"
+                    class="form-control"
                     placeholder="--Choose Information Resources-- "
                     required
                   >
@@ -707,7 +736,7 @@ export default function InternationalOnline() {
                 </div>
               </div>
               <div className="button">
-                <input type="submit" value="CLOSE REGISTRATION" />
+                <input type="submit" value="SUBMIT" />
               </div>
             </form>
 

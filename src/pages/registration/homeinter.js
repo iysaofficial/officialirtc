@@ -47,39 +47,39 @@ function HomeInter() {
                 REGISTRATION FORM FOR INTERNATIONAL PARTICIPANTS
               </h1>
               <h3 className="mx-auto mt-5 mb-2 text-sm md:text-lg lg:text-2xl">
-                Choose Categories Competition for Registration IRTC 2025
+                Choose Categories Competition for Registration IRTC 2026
               </h3>
             </div>
           </div>
           <div className="link-web mx-auto text-center">
-            {/* <a
+            <a
               className="btn-regist btn-action text-center me-lg-5 m-2"
               onClick={() =>
                 handleOpenModal("/inter-online", internationalOnlineTerms)
               }
             >
               Online Competition <i className="fa-solid fa-earth-americas"></i>
-            </a> */}
-            <a
+            </a>
+            {/* <a
               className="btn-regist btn-action text-center me-lg-5 m-2"
               onClick={() => handleOpenModal("/")}
             >
               Close Registration <i className="fa-solid fa-earth-americas"></i>
-            </a>
-            {/* <a
+            </a> */}
+            <a
               className="btn-regist btn-action text-center me-lg-5 m-2"
               onClick={() =>
                 handleOpenModal("/inter-offline", internationalOfflineTerms)
               }
             >
               Offline Competition <i className="fa-solid fa-earth-americas"></i>
-            </a> */}
-            <a
+            </a>
+            {/* <a
               className="btn-regist btn-action text-center me-lg-5 m-2"
               onClick={() => handleOpenModal("/")}
             >
               Close Registration <i className="fa-solid fa-earth-americas"></i>
-            </a>
+            </a> */}
           </div>
         </div>
       </section>
