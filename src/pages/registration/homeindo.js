@@ -50,6 +50,7 @@ function HomeIndo() {
           </div>
           <div className="link-web mx-auto text-center">
             <a
+              href="#!"
               className="btn-regist btn-action text-center me-lg-5 m-2"
               onClick={() =>
                 handleOpenModal("/indo-online", indonesiaOnlineTerms)
@@ -66,6 +67,7 @@ function HomeIndo() {
               Close Registration <i className="fa-solid fa-earth-americas"></i>
             </a> */}
             <a
+              href="#!"
               className="btn-regist btn-action text-center me-lg-5 m-2"
               onClick={() =>
                 handleOpenModal("/indo-offline", indonesiaOfflineTerms)

@@ -70,6 +70,7 @@ const Newscomp1 = () => {
           <p class="card-text col-sm-7 mt-5">
             <a
               target="_blank"
+              rel="noreferrer"
               href="https://updatebali.com/diikuti-685-tim-dari-28-negara-universitas-udayana-dan-iysa-berkolaborasi-gelar-isif-ke-5/"
               class="text-muted col-sm-12"
             >

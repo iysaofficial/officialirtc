@@ -20,7 +20,9 @@ export default function InternationalOnline() {
   const [countdown, setCountdown] = useState(5);
   const [canClick, setCanClick] = useState(false);
   const router = useNavigate();
+  // eslint-disable-next-line no-unused-vars
   const [phoneCodes, setPhoneCodes] = useState([]);
+  // eslint-disable-next-line no-unused-vars
   const [phoneCodesLoading, setPhoneCodesLoading] = useState(true); 
 
   const handleInputNameChange = (e) => {
@@ -150,14 +152,6 @@ export default function InternationalOnline() {
       if (response.ok) {
         setStatusMessage("Data sent successfully!");
 
-        // Ambil data sebelum reset
-        const formData = {
-          namaLengkap: selectedMaxNamaLengkap,
-          projectTitle: selectedMaxProject,
-          category: selectedCategory,
-          categoryPrice: categoryPrice,
-          namasekolah: selectedNamaSekolah,
-        };
 
         form.reset();
         setTimeout(() => {
@@ -187,7 +181,7 @@ export default function InternationalOnline() {
         <div className="container">
           <div className="content">
             <h1 className="sub">REGISTRATION FORM</h1>
-            <h1 className="garis-bawah"></h1>
+            <div className="garis-bawah" role="presentation"></div>
             <br />
             <br />
             <h4>
@@ -249,7 +243,7 @@ export default function InternationalOnline() {
 
             <form name="regist-form">
               <h1 className="text-sm md:text-lg lg:text-5xl">BIODATA</h1>
-              <h1 className="garis-bawah"></h1>
+              <div className="garis-bawah" role="presentation"></div>
               <div className="user-details">
                 <div className="input-box">
                   <label for="CATEGORY_PARTICIPANT" className="form-label">
@@ -446,7 +440,7 @@ export default function InternationalOnline() {
               {/* DATA SEKOLAH START */}
               {/* DATA SEKOLAH START */}
               <h1 className="text-sm md:text-lg lg:text-5xl">SCHOOL DATA</h1>
-              <h1 className="garis-bawah"></h1>
+              <div className="garis-bawah" role="presentation"></div>
               <div class="user-details">
                 <div class="input-box">
                   <label for="NAMA_SEKOLAH" class="form-label">
@@ -523,7 +517,7 @@ export default function InternationalOnline() {
               <h1 className="text-sm md:text-lg lg:text-5xl">
                 SUPERVISOR DATA
               </h1>
-              <h1 className="garis-bawah"></h1>
+              <div className="garis-bawah" role="presentation"></div>
               <div className="user-details">
                 <div class="input-box">
                   <label for="NAME_SUPERVISOR" class="form-label">
@@ -578,7 +572,7 @@ export default function InternationalOnline() {
                 <h1 className="text-sm md:text-lg lg:text-5xl">
                   DETAIL PROJECT
                 </h1>
-                <h1 className="garis-bawah"></h1>
+                <div className="garis-bawah" role="presentation"></div>
               </div>
               <div className="user-details">
                 <div class="input-box">
@@ -681,7 +675,7 @@ export default function InternationalOnline() {
                 <h1 className="text-sm md:text-lg lg:text-5xl">
                   GENERAL INFORMATION
                 </h1>
-                <h1 className="garis-bawah"></h1>
+                <div className="garis-bawah" role="presentation"></div>
               </div>
               <div className="user-details">
                 <div class="input-box">

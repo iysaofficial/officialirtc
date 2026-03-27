@@ -58,6 +58,7 @@ const Newscomp2 = () => {
           <p class="card-text col-sm-7 mt-5">
             <a
               target="_blank"
+              rel="noreferrer"
               href="https://lenteraesai.id/2023/11/10/isif-2023-yang-diselenggarakan-atas-kolaborasi-unud-dengan-iysa-resmi-ditutup/"
               class="text-muted col-sm-12"
             >

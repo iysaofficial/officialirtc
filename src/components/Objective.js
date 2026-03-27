@@ -7,11 +7,12 @@ const Objective = () => {
             <img
               src="assets/img/logo/obj.jpg "
               className="img-fluid"
+              alt="Objective"
             ></img>
           </div>
           <div className="col-md-6 hero-content mb-auto">
             <h1 className="halo">Objective</h1>
-            <h1 className="garis-bawah"></h1>
+            <div className="garis-bawah" role="presentation"></div>
             <h4 className="mt-5">01</h4>
             <p className="mt-3">
               Increasing the competence of teachers, especially in the

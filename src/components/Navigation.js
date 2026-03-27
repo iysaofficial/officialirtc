@@ -94,6 +94,7 @@ const Navigation = () => {
         .removeEventListener("click", handleMenuClick);
       window.removeEventListener("resize", handleResize);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isOpen]);
 
   const location = useLocation();
@@ -103,7 +104,7 @@ const Navigation = () => {
     <header className="header">
       <div className="header-main">
         <div className="logo">
-          <img src="../assets/img/logo/IRTC.jpg" />
+          <img src="../assets/img/logo/IRTC.jpg" alt="IRTC Logo" />
         </div>
         <div className="open-nav-menu">
           <span></span>
@@ -122,7 +123,7 @@ const Navigation = () => {
               <a href="/">Home</a>
             </li>
             <li className="menu-item menu-item-has-children">
-              <a href="#" data-toggle="sub-menu">
+              <a href="#!" data-toggle="sub-menu">
                 Media
               </a>
               <ul className="sub-menu text-center">
@@ -165,12 +166,13 @@ const Navigation = () => {
               <a
                 href="https://drive.google.com/file/d/12w7Kl_pqqzDelG_DMesT8S_xpxFK7X2C/view?usp=sharing"
                 target="_blank"
+                rel="noreferrer"
               >
                 Guide Book
               </a>
             </li>
             <li className="menu-item menu-item-has-children">
-              <a href="#" data-toggle="sub-menu">
+              <a href="#!" data-toggle="sub-menu">
                 Gallery
               </a>
               <ul className="sub-menu text-center">

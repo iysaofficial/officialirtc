@@ -86,6 +86,7 @@ const Newscomp3 = () => {
           <p class="card-text col-sm-7 mt-5">
             <a
               target="_blank"
+              rel="noreferrer"
               href="https://www.baliviralnews.com/diikuti-peserta-dari-28-negara-unud-tuan-rumah-isif-iif-nrtc-dan-irtc-2023/"
               class="text-muted col-sm-12"
             >
