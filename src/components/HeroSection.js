@@ -15,7 +15,7 @@ const HeroSection = () => {
           </p>
           <div className="main-hero-buttons">
             <a
-              href="https://drive.google.com/file/d/12w7Kl_pqqzDelG_DMesT8S_xpxFK7X2C/view?usp=sharing"
+              href="https://drive.google.com/file/d/1T4MwG84TsiE0Lffm5PYtKFPpq7UMzpUk/view?usp=sharing"
               className="main-hero-btn"
               target="_blank"
               rel="noopener noreferrer"
