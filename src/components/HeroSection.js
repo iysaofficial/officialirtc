@@ -22,9 +22,9 @@ const HeroSection = () => {
             >
               View Guide Book
             </a>
-            <a href="#" className="main-hero-btn main-hero-btn-yellow">
+            <button className="main-hero-btn main-hero-btn-yellow">
               Coming Soon !
-            </a>
+            </button>
           </div>
         </div>
       </div>
