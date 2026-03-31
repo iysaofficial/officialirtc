@@ -22,8 +22,8 @@ const HeroSection = () => {
             >
               View Guide Book
             </a>
-            <a href="/homeregist" className="main-hero-btn main-hero-btn-yellow">
-              Registration Here !
+            <a href="#" className="main-hero-btn main-hero-btn-yellow">
+              Coming Soon !
             </a>
           </div>
         </div>
