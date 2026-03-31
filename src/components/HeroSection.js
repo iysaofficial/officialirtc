@@ -14,14 +14,14 @@ const HeroSection = () => {
             Don’t miss the chance to be part of an inspiring and prestigious event for educators!
           </p>
           <div className="main-hero-buttons">
-            <a
+            {/* <a
               href="https://drive.google.com/file/d/1T4MwG84TsiE0Lffm5PYtKFPpq7UMzpUk/view?usp=sharing"
               className="main-hero-btn"
               target="_blank"
               rel="noopener noreferrer"
             >
               View Guide Book
-            </a>
+            </a> */}
             <button className="main-hero-btn main-hero-btn-yellow">
               Coming Soon !
             </button>
