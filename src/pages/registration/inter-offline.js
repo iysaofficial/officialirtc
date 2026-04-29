@@ -49,9 +49,9 @@ export default function InternationalOffline() {
 
     // Logika untuk menentukan harga berdasarkan kategori yang dipilih
     switch (value) {
-      case "Global Competition for Life Science - Offline Competition":
+      case "Global Competition for Life Sciences - Offline Competition":
         break;
-      case "Global Competition for Life Science - Offline Competition + Full Package":
+      case "Global Competition for Life Sciences - Offline Competition + Full Package":
         break;
       default:
         break;
@@ -265,13 +265,13 @@ export default function InternationalOffline() {
                     onChange={handleCategoryChange}
                   >
                     <option value="">--Choose Category Competition--</option>
-                    <option value="Global Competition for Life Science - Offline Competition">
+                    <option value="Global Competition for Life Sciences - Offline Competition">
                       Offline Competition
                     </option>
                     {/* <option value="Global Competition for Life Science - Offline Competition + Excursion">
                       Offline Competition + Excursion
                     </option> */}
-                    <option value="Global Competition for Life Science - Offline Competition + Full Package">
+                    <option value="Global Competition for Life Sciences - Offline Competition + Full Package">
                       Offline Competition + Full Package
                     </option>
                   </select>
@@ -543,7 +543,7 @@ export default function InternationalOffline() {
                     <option value="Sustainability Development">
                       Sustainability Development
                     </option>
-                    <option value="Life Science">Life Science</option>
+                    <option value="Life Sciences">Life Sciences</option>
                     <option value="Engineering">Engineering</option>
                     <option value="Education">Education</option>
                     <option value="Environmental">Environment</option>
