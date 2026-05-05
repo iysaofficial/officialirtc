@@ -164,7 +164,7 @@ const Navigation = () => {
             </li>
             <li className="menu-item menu-item-has-children">
               <a
-                href="https://drive.google.com/file/d/12w7Kl_pqqzDelG_DMesT8S_xpxFK7X2C/view?usp=sharing"
+                href="https://drive.google.com/drive/folders/1T4kg5uRRBZfwTlGBq3Ny0SOQ4S2Vu7Zx?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
               >
