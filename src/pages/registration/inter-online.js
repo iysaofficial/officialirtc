@@ -50,13 +50,13 @@ export default function InternationalOnline() {
     // Logika untuk menentukan harga berdasarkan kategori yang dipilih
     switch (value) {
       case "International Research Teacher Competition - Online Competition":
-        setCategoryPrice("$75 USD");
+        setCategoryPrice("$85 USD");
         break;
       case "International Research Teacher Competition - Online Competition + Certificate and Medal (SOUTH EAST ASIA ONLY)":
-        setCategoryPrice("$200 USD");
+        setCategoryPrice("$225 USD");
         break;
       case "International Research Teacher Competition - Online Competition + Certificate and Medal (Exclude SOUTH EAST ASIA)":
-        setCategoryPrice("$250 USD");
+        setCategoryPrice("$275 USD");
         break;
       default:
         setCategoryPrice("");
@@ -64,7 +64,7 @@ export default function InternationalOnline() {
     }
   };
 
-  useEffect(() => { 
+  useEffect(() => {
     const termsAccepted = sessionStorage.getItem("termsAccepted");
 
     if (!termsAccepted) {
@@ -73,9 +73,8 @@ export default function InternationalOnline() {
     }
   }, [router]);
 
-  const scriptURL = "https://script.google.com/macros/s/AKfycbyiIOHC2PB3Ig7KO8JtM3qLEDlOfhyXfgDmWV1sKu7OrMm74DdTbqdkaOPPygoxNXKyHQ/exec";
-
-
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycbyiIOHC2PB3Ig7KO8JtM3qLEDlOfhyXfgDmWV1sKu7OrMm74DdTbqdkaOPPygoxNXKyHQ/exec";
 
   useEffect(() => {
     const form = document.forms["regist-form"];
@@ -122,16 +121,13 @@ export default function InternationalOnline() {
       if (response.ok) {
         setStatusMessage("Data sent successfully!");
 
-
         form.reset();
         setTimeout(() => {
           router(
-            `/thankyou?namaLengkap=${encodeURIComponent(
-              selectedMaxNamaLengkap
-            )}
+            `/thankyou?namaLengkap=${encodeURIComponent(selectedMaxNamaLengkap)}
             &projectTitle=${encodeURIComponent(selectedMaxProject)}
             &category=${encodeURIComponent(selectedCategory)}
-            &namasekolah=${encodeURIComponent(selectedNamaSekolah)}`
+            &namasekolah=${encodeURIComponent(selectedNamaSekolah)}`,
           );
         }, 1000);
       } else {
@@ -203,8 +199,8 @@ export default function InternationalOnline() {
                       {isLoading
                         ? "Submitting..."
                         : canClick
-                        ? "Continue"
-                        : `Please wait... ${countdown}`}
+                          ? "Continue"
+                          : `Please wait... ${countdown}`}
                     </button>
                   </div>
                 </div>
@@ -323,7 +319,10 @@ export default function InternationalOnline() {
                   >
                     <option value="">--Choose Phone Code--</option>
                     {phoneCodes.map((country) => (
-                      <option key={country.name} value={`${country.name} ${country.code}`}>
+                      <option
+                        key={country.name}
+                        value={`${country.name} ${country.code}`}
+                      >
                         {country.name} ({country.code})
                       </option>
                     ))}
@@ -391,26 +390,24 @@ export default function InternationalOnline() {
                 </div>
               </div>
               <div className="user-details">
-              <div class="input-box">
-                <label for="GRADE" class="form-label">
-                  Grade{" "}
-                </label>
-                <select
-                  type="text"
-                  id="GRADE"
-                  name="GRADE"
-                  class="form-control"
-                  placeholder="Choose Grade"
-                  required
-                >
-                  <option value="">--Choose Your Grade--</option>
-                  <option value="Elementary">Elementary</option>
-                  <option value="Secondary">
-                    Secondary
-                  </option>
-                  <option value="University">University</option>
-                </select>
-              </div>
+                <div class="input-box">
+                  <label for="GRADE" class="form-label">
+                    Grade{" "}
+                  </label>
+                  <select
+                    type="text"
+                    id="GRADE"
+                    name="GRADE"
+                    class="form-control"
+                    placeholder="Choose Grade"
+                    required
+                  >
+                    <option value="">--Choose Your Grade--</option>
+                    <option value="Elementary">Elementary</option>
+                    <option value="Secondary">Secondary</option>
+                    <option value="University">University</option>
+                  </select>
+                </div>
                 <div class="input-box">
                   <label for="COUNTRY" class="form-label">
                     Country
