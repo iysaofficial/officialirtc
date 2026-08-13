@@ -417,7 +417,7 @@ export default function InternationalOffline() {
 
               {/* DATA PEMBIMBING START */}
               {/* DATA PEMBIMBING START */}
-              <h1 className="text-sm md:text-lg lg:text-5xl">
+              {/* <h1 className="text-sm md:text-lg lg:text-5xl">
                 SUPERVISOR DATA
               </h1>
               <div className="garis-bawah" role="presentation"></div>

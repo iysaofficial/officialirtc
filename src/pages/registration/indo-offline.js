@@ -413,7 +413,7 @@ function IndonesiaOffline() {
                 SUPERVISOR DATA
               </h1>
               <div className="garis-bawah" role="presentation"></div>
-              <div className="user-details">
+              {/* <div className="user-details">
                 <div class="input-box">
                   <label for="NAME_SUPERVISOR" class="form-label">
                     Teacher/Supervisor Name
@@ -463,7 +463,7 @@ function IndonesiaOffline() {
                     required
                   />
                 </div>
-              </div>
+              </div> */}
               {/* DATA PEMBIMBING END */}
               {/* DATA PEMBIMBING END */}
 

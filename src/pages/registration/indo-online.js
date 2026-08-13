@@ -301,7 +301,7 @@ function IndonesiaOnline() {
                     required
                   />
                 </div>
-                <div className="input-box">
+                {/* <div className="input-box">
                   <label for="NISN_NIM" className="form-label">
                     Leader & Team Members NISN / NIM
                   </label>
@@ -323,7 +323,7 @@ function IndonesiaOnline() {
                     placeholder="Input Leader & Team Members NISN / NIM"
                     required
                   ></textarea>
-                </div>
+                </div> */}
               </div>
 
               {/* DATA SEKOLAH START */}
@@ -418,7 +418,7 @@ function IndonesiaOnline() {
 
               {/* DATA PEMBIMBING START */}
               {/* DATA PEMBIMBING START */}
-              <h1 className="text-sm md:text-lg lg:text-5xl">
+              {/* <h1 className="text-sm md:text-lg lg:text-5xl">
                 SUPERVISOR DATA
               </h1>
               <div className="garis-bawah" role="presentation"></div>
@@ -473,7 +473,7 @@ function IndonesiaOnline() {
                     required
                   />
                 </div>
-              </div>
+              </div> */}
               {/* DATA PEMBIMBING END */}
 
               {/* DETAIL PROJECT START */}
