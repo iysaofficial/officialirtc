@@ -261,7 +261,7 @@ export default function InternationalOffline() {
                       with the team leader&apos;s name at the beginning, with
                       the following format:
                     </p>
-                    <p>Note: maximum 5 members + 1 team leader</p>
+                    <p>Note: maximum 2 members + 1 team leader</p>
                     <h6>Kamal Putra Simatupang</h6>
                     <h6>Nur Alif Rajaloa Hidayat</h6>
                     <h6>Irsyad Zaidan</h6>
