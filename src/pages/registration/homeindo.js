@@ -49,7 +49,7 @@ function HomeIndo() {
             </div>
           </div>
           <div className="link-web mx-auto text-center">
-            <a
+            {/* <a
               href="#!"
               className="btn-regist btn-action text-center me-lg-5 m-2"
               onClick={() =>
@@ -58,14 +58,14 @@ function HomeIndo() {
             >
               Online Competition <i className="fa-solid fa-earth-americas"></i>
             </a>
-            {/* <a
+            <a
               className="btn-regist btn-action text-center me-lg-5 m-2"
               onClick={() =>
                 handleOpenModal("/", )
               }
             >
               Close Registration <i className="fa-solid fa-earth-americas"></i>
-            </a> */}
+            </a>
             <a
               href="#!"
               className="btn-regist btn-action text-center me-lg-5 m-2"
@@ -75,7 +75,7 @@ function HomeIndo() {
             >
               Offline Competition <i className="fa-solid fa-earth-americas"></i>
             </a>
-            {/* <a
+            <a
               className="btn-regist btn-action text-center me-lg-5 m-2"
               onClick={() =>
                 handleOpenModal("/", )
@@ -83,6 +83,20 @@ function HomeIndo() {
             >
               Close Registration <i className="fa-solid fa-earth-americas"></i>
             </a> */}
+            <a
+              href="#!"
+              className="btn-regist btn-action text-center me-lg-5 m-2 disabled"
+              style={{ pointerEvents: "none", cursor: "not-allowed" }}
+            >
+              Coming Soon 2027 <i className="fa-solid fa-earth-americas"></i>
+            </a>
+            <a
+              href="#!"
+              className="btn-regist btn-action text-center me-lg-5 m-2 disabled"
+              style={{ pointerEvents: "none", cursor: "not-allowed" }}
+            >
+              Coming Soon 2027 <i className="fa-solid fa-earth-americas"></i>
+            </a>
           </div>
         </div>
       </section>

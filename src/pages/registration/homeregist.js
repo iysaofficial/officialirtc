@@ -27,7 +27,7 @@ const RegistHome = () => {
               Indonesia Participant{" "}
               <i className="fa-solid fa-earth-americas"></i>
             </a> */}
-            <a
+            {/* <a
               href="/homeindo"
               className="btn-regist btn-action text-center me-lg-5 m-2"
             >
@@ -40,6 +40,20 @@ const RegistHome = () => {
             >
               International Participant{" "}
               <i className="fa-solid fa-earth-americas"></i>
+            </a> */}
+            <a
+              href="#!"
+              className="btn-regist btn-action text-center me-lg-5 m-2 disabled"
+              style={{ pointerEvents: "none", cursor: "not-allowed" }}
+            >
+              Coming Soon 2027 <i className="fa-solid fa-earth-americas"></i>
+            </a>
+            <a
+              href="#!"
+              className="btn-regist btn-action text-center me-lg-5 m-2 disabled"
+              style={{ pointerEvents: "none", cursor: "not-allowed" }}
+            >
+              Coming Soon 2027 <i className="fa-solid fa-earth-americas"></i>
             </a>
           </div>
         </div>
