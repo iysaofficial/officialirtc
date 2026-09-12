@@ -10,8 +10,12 @@ const HeroSection = () => {
         <div className="main-hero-content">
           <h1>International Research Teacher Competition</h1>
           <p>
-            Register yourself and your team to compete, share innovations, and expand your network with the best colleagues from all over the world.<br />
-            Don’t miss the chance to be part of an inspiring and prestigious event for educators!
+            Register yourself and your team to compete, share innovations, and
+            expand your network with the best colleagues from all over the
+            world.
+            <br />
+            Don’t miss the chance to be part of an inspiring and prestigious
+            event for educators!
           </p>
           <div className="main-hero-buttons">
             {/* <a
@@ -25,7 +29,7 @@ const HeroSection = () => {
               className="main-hero-btn main-hero-btn-yellow disabled"
               style={{ pointerEvents: "none", cursor: "not-allowed" }}
             >
-              Coming Soon 2027
+              Close Registration
             </a>
             <a
               href="https://drive.google.com/drive/folders/1T4kg5uRRBZfwTlGBq3Ny0SOQ4S2Vu7Zx?usp=sharing"
@@ -35,7 +39,6 @@ const HeroSection = () => {
             >
               View Guide Book
             </a>
-            
           </div>
         </div>
       </div>
