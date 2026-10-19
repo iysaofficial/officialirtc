@@ -66,7 +66,7 @@ function HomeInter() {
               className="btn-regist btn-action text-center me-lg-5 m-2"
               onClick={() => handleOpenModal("/")}
             >
-              Close Registration <i className="fa-solid fa-earth-americas"></i>
+              Coming Soon 2027 <i className="fa-solid fa-earth-americas"></i>
             </a>
             <a
               href="#!"
@@ -81,7 +81,7 @@ function HomeInter() {
               className="btn-regist btn-action text-center me-lg-5 m-2"
               onClick={() => handleOpenModal("/")}
             >
-              Close Registration <i className="fa-solid fa-earth-americas"></i>
+              Coming Soon 2027 <i className="fa-solid fa-earth-americas"></i>
             </a> */}
             <a
               href="#!"

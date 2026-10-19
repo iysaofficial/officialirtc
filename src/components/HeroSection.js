@@ -29,7 +29,7 @@ const HeroSection = () => {
               className="main-hero-btn main-hero-btn-yellow disabled"
               style={{ pointerEvents: "none", cursor: "not-allowed" }}
             >
-              Close Registration
+              Coming Soon 2027
             </a>
             <a
               href="https://drive.google.com/drive/folders/1T4kg5uRRBZfwTlGBq3Ny0SOQ4S2Vu7Zx?usp=sharing"

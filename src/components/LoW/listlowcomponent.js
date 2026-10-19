@@ -3,10 +3,16 @@ import React from "react";
 function ListLow() {
   const winners = [
     {
+      year: 2026,
+      color: "warning",
+      link: "/low2026",
+      external: true,
+    },
+    {
       year: 2025,
       color: "warning",
       link: "/low2025",
-      external: true,
+      external: false,
     },
     {
       year: 2024,
