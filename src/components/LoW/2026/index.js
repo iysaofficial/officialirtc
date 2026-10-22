@@ -10,7 +10,8 @@ export default function List2026() {
       driveLink: {
         Online:
           "https://drive.google.com/file/d/1IWGSNGIAJM3VKvlvQKRjX8YuseJ9qpL5/view?usp=sharing",
-        Offline: "",
+        Offline:
+          "https://drive.google.com/file/d/1SDT-XvgmsJ9lG_T59VwcvPeZWq0qJIW5/view?usp=sharing",
       },
     },
   ];

@@ -13,7 +13,7 @@ const Navigation = () => {
 
   const collapseSubMenu = () => {
     const activeSubMenu = document.querySelector(
-      ".menu-item-has-children.active .sub-menu"
+      ".menu-item-has-children.active .sub-menu",
     );
     activeSubMenu.removeAttribute("style");
     activeSubMenu.parentElement.classList.remove("active");
@@ -132,6 +132,15 @@ const Navigation = () => {
                 </li>
                 <li className="menu-item">
                   <a
+                    href="https://drive.google.com/file/d/1C0SB63mLWtS1yTSbt3ET9FvFmswDLJiJ/view?usp=sharing"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    Press Release 2026
+                  </a>
+                </li>
+                <li className="menu-item">
+                  <a
                     href="https://drive.google.com/file/d/12D5KTwhSXcKZO8osMVpFk47Etgk0kGzY/view?usp=sharingcd"
                     target="_blank"
                     rel="noreferrer noopener"
@@ -176,6 +185,15 @@ const Navigation = () => {
                 Gallery
               </a>
               <ul className="sub-menu text-center">
+                <li className="menu-item">
+                  <a
+                    href="https://drive.google.com/drive/folders/1VB4NwdBTuKipGVEbYv9wfgEWEQO5Q75H?usp=sharing"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    Gallery 2026
+                  </a>
+                </li>
                 <li className="menu-item">
                   <a
                     href="https://drive.google.com/drive/folders/1p-oWDrc1b9JgqGjVkgZ3tWzin0SCTDed?usp=sharing"
